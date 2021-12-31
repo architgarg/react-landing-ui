@@ -1,10 +1,10 @@
 {
-  "name": "@edge-future/react-shining-div",
+  "name": "react-landing-ui",
   "version": "1.0.0",
-  "description": "A react component to display shining animation",
+  "description": "A collection of all react components that might be needed to create landing pages",
   "author": "architgarg",
   "license": "MIT",
-  "repository": "edge-future/react-shining-div.git",
+  "repository": "architgarg/react-landing-ui.git",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -33,14 +33,14 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/react-shining-div-tsdx.esm.js",
+  "module": "dist/react-landing-ui.esm.js",
   "size-limit": [
     {
-      "path": "dist/react-shining-div-tsdx.cjs.production.min.js",
+      "path": "dist/react-landing-ui.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/react-shining-div-tsdx.esm.js",
+      "path": "dist/react-landing-ui.esm.js",
       "limit": "10 KB"
     }
   ],
@@ -58,6 +58,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "rollup-plugin-copy": "github:architgarg/rollup-plugin-copy",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.45.1",
     "size-limit": "^7.0.5",

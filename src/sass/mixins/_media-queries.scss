@@ -1,0 +1,23 @@
+@mixin sm-down() {
+  @media only screen and (max-width: 426px) {
+    @content;
+  }
+}
+
+@mixin md-down() {
+  @media only screen and (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin lg-down() {
+  @media only screen and (max-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin xl-up() {
+  @media only screen and (min-width: 1441px) {
+    @content;
+  }
+}

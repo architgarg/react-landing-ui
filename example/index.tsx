@@ -2,7 +2,7 @@ import 'react-app-polyfill/ie11';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { ShiningDiv } from "@edge-future/react-shining-div";
+import { ShiningDiv } from "react-landing-ui";
 import "./indec.css";
 
 const App = () => {

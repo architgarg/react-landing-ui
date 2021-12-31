@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0",
-    "@edge-future/react-shining-div": "../dist"
+    "react-landing-ui": "../dist"
   },
   "alias": {
     "react": "../node_modules/react",

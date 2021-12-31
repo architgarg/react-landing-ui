@@ -1,0 +1,50 @@
+.button {
+  --bg-color: var(--bg-color, var(--blue));
+  --color: var(--color, var(--white));
+  --font: var(--font, var(--font-secondary));
+
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+
+  box-shadow: 0px 8px 16px rgba(0, 11, 36, 0.1);
+  border-radius: 4px;
+  background: transparent;
+
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+}
+
+.filled {
+  background: var(--bg-color);
+  color: var(--color);
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    filter: brightness(1.15);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
+    box-shadow: 0px 4px 8px rgba(0, 11, 36, 0.1);
+    filter: brightness(1.25);
+  }
+}
+
+.outlined {
+  color: var(--bg-color);
+  box-shadow: inset 0 0 0 2px var(--bg-color), 0px 8px 16px rgba(0, 11, 36, 0.1);
+
+  &:hover {
+    filter: brightness(1.15);
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 2px var(--bg-color), 0px 4px 8px rgba(0, 11, 36, 0.1);
+    filter: brightness(1.25);
+  }
+}
+
