@@ -1,0 +1,9 @@
+node_modules
+dist
+
+.cache
+.idea
+
+
+*.log
+.DS_Store
