@@ -24,8 +24,7 @@ module.exports = {
       }),
       copy({
         targets: [
-          { src: 'src/sass/**/*', dest: 'dist' },
-          { src: 'package.json', dest: 'dist' },
+          { src: 'src/sass/**/*', dest: 'dist/sass' }
         ],
         hook: 'writeBundle'
       })

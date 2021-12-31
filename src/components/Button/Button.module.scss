@@ -1,7 +1,7 @@
 .button {
-  --bg-color: var(--bg-color, var(--blue));
-  --color: var(--color, var(--white));
-  --font: var(--font, var(--font-secondary));
+  --btn-bg-color: var(--bg-color, var(--blue));
+  --color-btn: var(--color, var(--white));
+  --font-btn: var(--font, var(--font-secondary));
 
   padding: 1rem 2.5rem;
   cursor: pointer;
@@ -10,7 +10,7 @@
   border-radius: 4px;
   background: transparent;
 
-  font-family: var(--font);
+  font-family: var(--font-btn);
   font-style: normal;
   font-weight: bold;
   font-size: 1rem;
@@ -18,8 +18,8 @@
 }
 
 .filled {
-  background: var(--bg-color);
-  color: var(--color);
+  background: var(--bg-color-btn);
+  color: var(--color-btn);
   transition: all 0.1s ease-in-out;
 
   &:hover {
@@ -34,8 +34,8 @@
 }
 
 .outlined {
-  color: var(--bg-color);
-  box-shadow: inset 0 0 0 2px var(--bg-color), 0px 8px 16px rgba(0, 11, 36, 0.1);
+  color: var(--bg-color-btn);
+  box-shadow: inset 0 0 0 2px var(--bg-color-btn), 0px 8px 16px rgba(0, 11, 36, 0.1);
 
   &:hover {
     filter: brightness(1.15);
@@ -43,7 +43,7 @@
   }
 
   &:active {
-    box-shadow: inset 0 0 0 2px var(--bg-color), 0px 4px 8px rgba(0, 11, 36, 0.1);
+    box-shadow: inset 0 0 0 2px var(--bg-color-btn), 0px 4px 8px rgba(0, 11, 36, 0.1);
     filter: brightness(1.25);
   }
 }

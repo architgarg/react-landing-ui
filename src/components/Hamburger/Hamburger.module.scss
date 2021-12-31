@@ -1,0 +1,19 @@
+.hamburger {
+  cursor: pointer;
+
+  .bar {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.active {
+    .bar:nth-child(1) {
+      transform: translate(8px) rotate(45deg)
+    }
+
+    .bar:nth-child(2) {
+      transform: translate(-9px, 8px) rotate(-45deg)
+    }
+  }
+}
