@@ -1,1 +1,1 @@
-export * from "./ShiningDiv/ShiningDiv";
+export * from "./components/ShiningDiv/ShiningDiv";
