@@ -9,12 +9,7 @@ interface Props {
 }
 
 export const NavBar: React.FC<Props> = ({logo, children}) => {
-  // const [active, setActive] = React.useState(false);
-
-  // todo: Uncomment this after publishing this to npm
-  // https://github.com/facebook/react/issues/13991
-  const active = true;
-  const setActive: any = () => {}
+  const [active, setActive] = React.useState(false);
 
   return <div className={classNames(styles.container, active && styles.opened)}>
     <nav className={styles.hamContainer}>
