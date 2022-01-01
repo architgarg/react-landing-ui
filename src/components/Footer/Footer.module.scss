@@ -1,0 +1,74 @@
+@import "sass/mixins";
+
+.container {
+  background: var(--black);
+  padding: var(--space-vertical) 5rem;
+  color: white;
+}
+
+.footerContent {
+  max-width: var(--width-container);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .mainLinks {
+    * + * {
+      margin-left: 3.75rem;
+    }
+
+    display: block;
+    transition: all 0.2s ease-in-out;
+    font-family: var(--font-secondary);
+
+    a:hover {
+      color: var(--blue);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+.extraLinks {
+  margin-top: 4rem;
+  text-align: center;
+
+  a {
+    color: gray;
+    display: block;
+    line-height: 2.4rem;
+  }
+}
+
+@include md-down() {
+  .footerContent {
+    .mainLinks {
+      * + * {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@include sm-down() {
+  .footerContent {
+    flex-direction: column;
+
+    * + * {
+      margin-top: 16px;
+    }
+
+    .mainLinks {
+      flex-direction: column;
+      padding: 0;
+
+      * + * {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .extraLinks {
+    margin-top: 2rem;
+  }
+}
