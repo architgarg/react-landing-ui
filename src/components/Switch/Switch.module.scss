@@ -1,13 +1,13 @@
 // Ref - https://codepen.io/mburnette/pen/LxNxNg
 
 .container {
-  --width: 60px;
-  --color-active-switch: var(--color-active, #bada55);
-  --color-inactive-switch: var(--color-inactive, #CDCCD9);
+  --width-i: var(--width, 60px);
+  --color-active-i: var(--color-active, #bada55);
+  --color-inactive-i: var(--color-inactive, #CDCCD9);
 
   font-size: 0.8rem;
   font-style: italic;
-  line-height: calc(var(--width) / 2);
+  line-height: calc(var(--width-i) / 2);
   user-select: none;
 
   input[type=checkbox] {
@@ -18,7 +18,7 @@
 
   label {
     cursor: pointer;
-    padding-left: calc(var(--width) + 10px);
+    padding-left: calc(var(--width-i) + 10px);
     position: relative;
     display: inline-block;
     font-weight: 300;
@@ -30,35 +30,35 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: var(--width);
-    height: calc(var(--width) / 2);
-    background: var(--color-inactive-switch);
+    width: var(--width-i);
+    height: calc(var(--width-i) / 2);
+    background: var(--color-inactive-i);
     display: block;
-    border-radius: calc(var(--width) / 2);
+    border-radius: calc(var(--width-i) / 2);
   }
 
   label:after {
     content: '';
     position: absolute;
-    top: calc((var(--width) * 5) / 100);
-    left: calc((var(--width) * 5) / 100);
-    width: calc((var(--width) * 40) / 100);
-    height: calc((var(--width) * 40) / 100);
+    top: calc((var(--width-i) * 5) / 100);
+    left: calc((var(--width-i) * 5) / 100);
+    width: calc((var(--width-i) * 40) / 100);
+    height: calc((var(--width-i) * 40) / 100);
     background: #fff;
-    border-radius: calc((var(--width) * 40) / 100);
+    border-radius: calc((var(--width-i) * 40) / 100);
     transition: 0.3s;
   }
 
   input:checked + label:before {
-    background: var(--color-active-switch);
+    background: var(--color-active-i);
   }
 
   input:checked + label:after {
-    left: calc(var(--width) - (var(--width) * 5) / 100);
+    left: calc(var(--width-i) - (var(--width-i) * 5) / 100);
     transform: translateX(-100%);
   }
 
   label:active:after {
-    width: calc((var(--width) * 65) / 100);
+    width: calc((var(--width-i) * 65) / 100);
   }
 }
