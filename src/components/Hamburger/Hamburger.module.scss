@@ -1,10 +1,12 @@
 .hamburger {
+  --i-stroke-color: var(--stroke-color, #3B415F);
   cursor: pointer;
 
   .bar {
     display: block;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    stroke: var(--i-stroke-color);
   }
 
   &.active {
