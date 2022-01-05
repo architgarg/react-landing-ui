@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+  --rlu-primary: #005070;
+  --rlu-white: #ffffff;
+  --rlu-footer-bg: #1A1834;
+
+  --rlu-font-primary: 'Inter', sans-serif;
+  --rlu-font-secondary: 'Poppins', sans-serif;
+
+  --rlu-width-nav: 1080px;
+  --rlu-width-container: 890px;
+  --rlu-space-vertical: 10rem;
+
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,10 +31,12 @@ code {
 }
 
 .main {
-  padding: 10px 20px;
-  background: #483cc8;
-  border-radius: 4px;
-  margin: 60px;
-  color: white;
-  width: fit-content;
+  height: 70vh;
+  padding-top: 100px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: var(--rlu-font-secondary);
 }

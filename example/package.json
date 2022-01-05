@@ -1,7 +1,6 @@
 {
   "name": "example",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
@@ -9,7 +8,7 @@
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0",
-    "react-landing-ui": "../dist"
+    "react-landing-ui": "1.1.1"
   },
   "alias": {
     "react": "../node_modules/react",
