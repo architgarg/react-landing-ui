@@ -1,25 +1,12 @@
 :root {
-  --honey: #f2ad00;
-  --yellow: #ffd977;
-  --blue: #5547f0;
-  --pink: #ffbab6;
-  --red: #ff8f88;
-  --nyan: #e5f9e0;
-  --apple: #a3f7b5;
-  --green: #40c9a2;
-  --army: #2f9c95;
-  --brown: #664147;
-  --white: #ffffff;
-  --black: #1A1834;
-  --shadow: rgb(0, 11, 36, 0.02);
+  --rlu-primary: #5547f0;
+  --rlu-white: #ffffff;
+  --rlu-footer-bg: #1A1834;
 
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Poppins', sans-serif;
+  --rlu-font-primary: 'Inter', sans-serif;
+  --rlu-font-secondary: 'Poppins', sans-serif;
 
-  --width-nav: 1080px;
-  --width-container: 890px;
-
-  --space-vertical: 10rem;
-
-  font-size: 16px;
+  --rlu-width-nav: 1080px;
+  --rlu-width-container: 890px;
+  --rlu-space-vertical: 10rem;
 }

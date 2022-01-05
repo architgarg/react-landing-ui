@@ -3,7 +3,7 @@
 .container {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 11, 36, 0.02);
-  background: var(--white);
+  background: var(--rlu-white, white);
   position: fixed;
   z-index: 2;
   top: 0;
@@ -16,13 +16,8 @@
   justify-content: space-between;
   align-items: center;
 
-  max-width: var(--width-nav);
+  max-width: var(--width-nav, 1080px);
   margin: auto;
-}
-
-.logo {
-  font-size: 1.8rem !important;
-  font-family: var(--font-secondary) !important;
 }
 
 .navItems {
@@ -39,10 +34,10 @@
   li {
     display: block;
     transition: all 0.2s ease-in-out;
-    font-family: var(--font-secondary);
+    font-family: var(--rlu-font-secondary);
 
     &:hover {
-      color: var(--blue);
+      color: #5547f0;
       transition: all 0.2s ease-in-out;
     }
   }

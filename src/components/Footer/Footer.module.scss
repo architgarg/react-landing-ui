@@ -1,13 +1,13 @@
 @import "sass/mixins";
 
 .container {
-  background: var(--black);
-  padding: var(--space-vertical) 5rem;
+  background: var(--rlu-footer-bg, #1A1834);
+  padding: var(--space-vertical, 10rem) 5rem;
   color: white;
 }
 
 .footerContent {
-  max-width: var(--width-container);
+  max-width: var(--width-container, 890px);
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -20,10 +20,10 @@
 
     display: block;
     transition: all 0.2s ease-in-out;
-    font-family: var(--font-secondary);
+    font-family: var(--rlu-font-secondary);
 
     a:hover {
-      color: var(--blue);
+      color: #5547f0;
       transition: all 0.2s ease-in-out;
     }
   }

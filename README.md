@@ -1,13 +1,11 @@
-# react-shining-div
+# react-landing-ui
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/react-shining-div.svg)](https://www.npmjs.com/package/react-shining-div) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-landing-ui.svg)](https://www.npmjs.com/package/react-landing-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-shining-div
+npm install --save react-landing-ui
 ```
 
 ## Usage
@@ -15,16 +13,56 @@ npm install --save react-shining-div
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-shining-div'
-import 'react-shining-div/dist/index.css'
+import { Logo } from "./components/Logo";
+import { Button, NavBar, Footer, Switch } from 'react-landing-ui';
 
-class Example extends Component {
+class Home extends Component {
   render() {
-    return <MyComponent />
+    return <>
+      <NavBar logo={<Logo/>}>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Roadmap</a>
+        <a href="#">Contact</a>
+        <ShiningDiv>
+          <Button>Start Project</Button>
+        </ShiningDiv>
+      </NavBar>
+      <div>
+        <Switch label="Sample Switch"/>
+      </div>
+      <Footer
+        logo={<Logo/>}
+        mainLinks={<>
+          <a href="#">About</a>
+          <a href="#">Pricing</a>
+          <a href="#">Roadmap</a>
+          <a href="#">Contact</a>
+        </>}
+        extraLinks={<>
+          <a href="#">Privacy</a>
+          <a href="#"> &copy; Archit 2022</a>
+        </>}
+      />
+    </>
   }
 }
 ```
 
+```css
+:root {
+  --rlu-primary: #005070;
+  --rlu-white: #ffffff;
+  --rlu-footer-bg: #1A1834;
+
+  --rlu-font-primary: 'Inter', sans-serif;
+  --rlu-font-secondary: 'Poppins', sans-serif;
+
+  --rlu-width-nav: 1080px;
+  --rlu-width-container: 890px;
+  --rlu-space-vertical: 10rem;
+}
+```
 ## License
 
 MIT © [architgarg](https://github.com/architgarg)
