@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0",
-    "react-landing-ui": "1.1.2"
+    "react-landing-ui": "^1.2.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
