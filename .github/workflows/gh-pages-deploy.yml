@@ -3,6 +3,9 @@
 
 name: Deploy to github.io
 on: [workflow_dispatch]
+defaults:
+ run:
+  working-directory: ./example
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +15,6 @@ jobs:
       with:
           node-version: '16.x'
 
-    - run: cd example
     - name: Install and Build 🔧
       run: |
         npm ci
@@ -22,4 +24,4 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.9
       with:
         branch: gh-pages
-        folder: example/build
+        folder: dist
