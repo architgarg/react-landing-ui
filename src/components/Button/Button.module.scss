@@ -1,7 +1,7 @@
 .button {
-  --bg-color-btn: var(--bg-color, var(--rlu-primary));
-  --color-btn: var(--color, var(--rlu-white));
-  --font-btn: var(--font, var(--rlu-font-secondary));
+  --bg-color-btn: var(--bg-color, var(--rlu-btn-bg-color));
+  --color-btn: var(--color, var(--rlu-btn-color));
+  --font-btn: var(--font, var(--rlu-btn-font));
 
   padding: 1rem 2.5rem;
   cursor: pointer;

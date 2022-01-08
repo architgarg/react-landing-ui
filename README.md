@@ -64,6 +64,10 @@ class Home extends Component {
   --rlu-width-nav: 1080px;
   --rlu-width-container: 890px;
   --rlu-space-vertical: 10rem;
+
+  --rlu-btn-bg-color: #005070;
+  --rlu-btn-color: white;
+  --rlu-btn-font: 'Poppins', sans-serif
 }
 ```
 ## License

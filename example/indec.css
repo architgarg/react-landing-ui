@@ -13,6 +13,10 @@
   --rlu-space-vertical: 10rem;
 
   font-size: 16px;
+
+  --rlu-btn-bg-color: #005070;
+  --rlu-btn-color: white;
+  --rlu-btn-font: 'Poppins', sans-serif
 }
 
 body {
