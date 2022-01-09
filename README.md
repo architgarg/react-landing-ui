@@ -2,7 +2,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-landing-ui.svg)](https://www.npmjs.com/package/react-landing-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-##Demo
+## Demo
 [https://architgarg.github.io/react-landing-ui/](https://architgarg.github.io/react-landing-ui/)
 
 ## Install
