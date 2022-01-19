@@ -42,7 +42,7 @@
     font-family: var(--rlu-font-secondary);
 
     &:hover {
-      color: #5547f0;
+      color: var(--rlu-nav-item-hover, #5547f0);
       transition: all 0.2s ease-in-out;
     }
   }
