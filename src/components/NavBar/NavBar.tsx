@@ -11,24 +11,22 @@ interface Props {
 export const NavBar: React.FC<Props> = ({logo, children}) => {
   const [active, setActive] = React.useState(false);
 
-  return <div className={classNames(styles.container, active && styles.opened)}>
-    <nav className={styles.hamContainer}>
-      <div className={styles.content}>
+  return <nav className={classNames(styles.container, active && styles.opened)}>
+    <div className={styles.content}>
+      <div className={styles.logoHamContainer}>
         {logo}
-
-        <ul className={classNames(styles.navItems)} onClick={() => setActive(false)}>
-          {
-            flattenChildren(children).map(child => {
-              if (isValidElement(child)) {
-                return <li key={child.key}>{child}</li>
-              }
-              return {child}
-            })
-          }
-        </ul>
+        <Hamburger className={styles.hamburger} active={active} setActive={setActive}/>
       </div>
-
-      <Hamburger className={styles.hamburger} active={active} setActive={setActive}/>
-    </nav>
-  </div>
+      <ul className={classNames(styles.navItems)} onClick={() => setActive(false)}>
+        {
+          flattenChildren(children).map(child => {
+            if (isValidElement(child)) {
+              return <li key={child.key}>{child}</li>
+            }
+            return {child}
+          })
+        }
+      </ul>
+    </div>
+  </nav>
 };

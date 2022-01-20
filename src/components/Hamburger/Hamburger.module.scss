@@ -1,6 +1,9 @@
 .hamburger {
   --i-stroke-color: var(--stroke-color, #3B415F);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .bar {
     display: block;
